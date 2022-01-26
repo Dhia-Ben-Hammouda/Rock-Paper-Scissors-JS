@@ -73,13 +73,17 @@ function gameloop()
 
   if (score1.innerText == 3)
   {
-    window.alert("player 1 won");
+    setTimeout( ()=>{
+      window.alert("player 1 won");
+    } , 500 )
     btn.removeEventListener("click" , gameloop);
   }
   
   if(score2.innerText == 3)
   {
-    window.alert("player 2 won");
+    setTimeout( ()=>{
+      window.alert("player 2 won");
+    } , 500 )
     btn.removeEventListener("click" , gameloop);
   }
 }
